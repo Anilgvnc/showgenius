@@ -1,4 +1,3 @@
-import React from 'react'
 import TopBar from './components/TopBar'
 import './App.css'
 import ModuleButton from './components/ModuleButton'
