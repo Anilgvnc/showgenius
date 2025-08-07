@@ -8,7 +8,7 @@ type ModuleButtonProps = {
 
 const ModuleButton = ({ title, description, source }: ModuleButtonProps) => {
     return (
-        <div className="card">
+        <div className="card" onClick={() => alert(`Coming Soon ${title}`)}>
             <img src={source} className='img' alt={title} />
             <div className="textBox">
                 <p className="text head">{title}</p>

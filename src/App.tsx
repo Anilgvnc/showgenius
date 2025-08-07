@@ -11,17 +11,17 @@ const App = () => {
         <ModuleButton
           title="Watch with your friend"
           description="Suggestions for series or movies to watch with your friends"
-          source="./public/multiple.jpg"
+          source="src/assets/multiple.jpg"
         />
         <ModuleButton
           title='By favorite content'
           description='Suggestions similar to your favorite movie or TV series'
-          source="./public/single.jpg"
+          source="src/assets/single.jpg"
         />
         <ModuleButton
           title='By genres'
           description='Suggestions similar to your favorite genres of movies or TV series'
-          source="./public/genre.jpg"
+          source="src/assets/genre.jpg"
         />
       </div>
       <Footer />
