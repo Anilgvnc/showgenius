@@ -2,6 +2,9 @@ import TopBar from './components/TopBar'
 import './App.css'
 import ModuleButton from './components/ModuleButton'
 import Footer from './components/Footer'
+import MultipleImg from './assets/multiple.jpg'
+import SingleImg from './assets/single.jpg'
+import GenreImg from './assets/genre.jpg'
 
 const App = () => {
   return (
@@ -11,17 +14,17 @@ const App = () => {
         <ModuleButton
           title="Watch with your friend"
           description="Suggestions for series or movies to watch with your friends"
-          source="src/assets/multiple.jpg"
+          source={MultipleImg}
         />
         <ModuleButton
           title='By favorite content'
           description='Suggestions similar to your favorite movie or TV series'
-          source="src/assets/single.jpg"
+          source={SingleImg}
         />
         <ModuleButton
           title='By genres'
           description='Suggestions similar to your favorite genres of movies or TV series'
-          source="src/assets/genre.jpg"
+          source={GenreImg}
         />
       </div>
       <Footer />
