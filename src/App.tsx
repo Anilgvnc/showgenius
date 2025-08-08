@@ -1,5 +1,6 @@
 import "./App.css";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Layout from "./pages/Layout";
 import SingleInput from "./pages/SingleInput";
@@ -11,11 +12,10 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/" element={<HomePage />} />
           <Route path="single" element={<SingleInput />} />
           <Route path="multiple" element={<MultipleInput />} />
           <Route path="genre" element={<GenreInput />} />
@@ -24,8 +24,11 @@ const App = () => {
         </Route>
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
 export default App;
+
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(<App />);
