@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from "./pages/HomePage";
 import Layout from "./pages/Layout";
 import SingleInput from "./pages/SingleInput";

@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import notFoundImg from "../assets/404.svg";
 

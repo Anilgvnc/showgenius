@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from "react-router";
 import "../constants/Layout.css";
 import Logo from "../assets/logo.png";
 
